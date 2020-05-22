@@ -38,7 +38,13 @@ app.get('/todos', async (req, res) => {
 })
 
 //get a todo
+app.get('todo/:id', (req, res) => {
+  try {
 
+  } catch (error) {
+    console.log(error.message)
+  }
+})
 //update a todo
 
 //delete a todo
