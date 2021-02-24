@@ -76,6 +76,10 @@ app.delete("/todos/:id", async (req, res) => {
 })
 
 
+app.get('/', (req, res) => {
+  res.send("Docker server is working")
+})
+
 app.listen(5000, () => {
   console.log('server runnin on post 5000')
 })
